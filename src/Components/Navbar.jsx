@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {ShoppingCart} from 'phosphor-react';
-import {HStack, VStack} from '@chakra-ui/react'
+import {HStack, VStack} from '@chakra-ui/react';
+import './Navbar.css';
 export default function Navbar(){
     return(
         <div className='navbar'>
