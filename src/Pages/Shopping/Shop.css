@@ -1,9 +1,12 @@
+.shop{
+  margin-bottom: 50px;
+}
 .shopTitle{
     display: flex;
     justify-content: center;
     color: black;
     align-items: center;
-    padding-top: 100px;
+    padding-top:80px;
     font-size: 3rem;
     font-weight: 700;
 }

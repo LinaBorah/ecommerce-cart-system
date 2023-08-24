@@ -23,15 +23,18 @@ export default function Cart() {
             </div>
             {totalAmount > 0 ?
                 <div className='checkout'>
-                    <p>Subtotal: {totalAmount}</p>
-                    <button className='continue' onClick={() => navigate('/')}>Continue Shopping</button>
-                    <button onClick={() => {
-                        checkout();
-                        navigate('/checkout');
-                    }}
-                    >Checkout
-                    </button>
-                </div> : 
+                    <p>Subtotal: ${totalAmount}</p>
+                    <div className='final-buttons'>
+                        <button className='continue' onClick={() => navigate('/')}>Continue Shopping</button>
+                        <button onClick={() => {
+                            checkout();
+                            navigate('/checkout');
+                        }}
+                        >Checkout
+                        </button>
+                    </div>
+
+                </div> :
                 <div className='empty'>
                     <h1>Your cart is Empty</h1>
                     <button className='continue' onClick={() => navigate('/')}>Continue Shopping</button>
